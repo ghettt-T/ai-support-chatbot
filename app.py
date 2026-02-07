@@ -12,7 +12,7 @@ st.caption("Powered by LLM + Custom Business Knowlege")
 uploaded_file = st.file_uploader("Upload your business FAQ", type="txt")
 if st.button("Clear Conversations"):
     st.session_state.messages = []
-    st.rerun
+    st.rerun ()
 business_info = ""
 if uploaded_file is not None:
     business_info = uploaded_file.read().decode("utf-8")
